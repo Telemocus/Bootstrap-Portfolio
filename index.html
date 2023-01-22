@@ -41,7 +41,7 @@
     </header>
     <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center ">
       <h1 class="display-1">Mongezi Mncube</h1>
-      <p class="lead font-size-8rem">Software Engineer Student</p>
+      <span id="typed" class="lead font-size-8rem"></span>
     </main>
       
    
@@ -211,12 +211,23 @@
       </div>
       
   </section>
-
+<!-- Javascript -->
 <script>
   window.addEventListener("scroll",() =>{
     const header = document.querySelector("header");
     header.classList.toggle("scrolling",window.scrollY > 0)
   } )
+</script>
+  <!-- Using Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed('#typed', {
+  
+    strings: ['Software Engineering Student'],
+    loop: true,
+    shuffle: false,
+    typeSpeed: 75,
+  });
 </script>
     
 </body>
